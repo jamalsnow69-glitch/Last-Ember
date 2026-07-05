@@ -1,0 +1,11 @@
+{
+  "name": "last-ember",
+  "private": true,
+  "workspaces": [
+    "client"
+  ],
+  "scripts": {
+    "dev": "npm --workspace client run dev",
+    "build": "npm --workspace client run build"
+  }
+}

@@ -1,0 +1,40 @@
+import type { CardDefinition } from '@shared/types/card';
+
+export const buildingCards: CardDefinition[] = [
+  {
+    id: 'reinforce_shelter',
+    name: 'Reinforce Shelter',
+    icon: '🏠',
+    rarity: 'uncommon',
+    category: 'building',
+    desc: 'Strengthen your base against the elements.',
+    effects: { wood: -6, stone: -4, scrap: -3 },
+    tags: ['building'],
+    requiresUpgrade: 'upg_shelter_1',
+    grantsUpgrade: 'upg_shelter_2',
+  },
+  {
+    id: 'build_storage',
+    name: 'Build Storage Area',
+    icon: '📦',
+    rarity: 'uncommon',
+    category: 'building',
+    desc: 'Construct organised storage for supplies.',
+    effects: { wood: -8, scrap: -4 },
+    tags: ['building'],
+    requiresUpgrade: 'upg_storage_1',
+    grantsUpgrade: 'upg_storage_2',
+  },
+  {
+    id: 'water_collector_build',
+    name: 'Build Water Collector',
+    icon: '💧',
+    rarity: 'uncommon',
+    category: 'building',
+    desc: 'Set up a rainwater collection system.',
+    effects: { scrap: -5, wood: -4, cloth: -2 },
+    tags: ['building'],
+    requiresUpgrade: 'upg_water_collector',
+    grantsUpgrade: 'upg_water_collector',
+  },
+];
